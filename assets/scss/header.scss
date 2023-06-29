@@ -1,0 +1,255 @@
+@import 'variables.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+.header {
+  &__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: $header-height;
+    padding: $header-padding;
+    background-color: $background-color;
+    
+
+    &__items {
+      display: flex;
+      flex-direction: row;
+      font-weight: 400;
+      font-size: 1.6rem;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        margin-right: 3rem;
+        
+      }
+    }
+
+    &__logo {
+      position: absolute;
+      left: 5px;
+      top: 1px;
+      padding: $header-logo-padding;
+
+      &__image {
+        width: 120px;
+        height: 30px;
+      }
+    }
+  }
+
+
+  &__about {
+    display: flex;
+    align-items: center;
+    padding: $content-padding;
+    background-color: #F1EFEA;
+
+    &__text {
+      flex: 1;
+      margin-left: 195px;
+
+      h2 {
+        font-size: 62px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: 'Kanit', sans-serif; /* Adjust the font weight as needed */
+        font-style: italic
+        
+        
+      }
+
+      h1 {
+        font-size: 82px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: $secondary-color;
+        font-family:  'Kanit', sans-serif;
+        font-style: italic
+        
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        width: 70%;
+      }
+
+      &__buttons {
+        &__first,
+        &__second {
+          border-radius: 6px;
+          padding: 5px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        &__first {
+          height: 40px;
+          color: #fff;
+          background-color: $secondary-color;
+          border: 3px solid $background-color;
+
+          &:hover {
+            background-color: darken($secondary-color, 10%);
+          }
+        }
+
+        &__second {
+          background-color: #fff;
+          height: 35px;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.342);
+          }
+        }
+
+        &__second {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    &__women {
+      flex: 1;
+      margin-left: 20rem;
+
+      &__img {
+        width: 70%;
+        max-width: 500px;
+        height: auto;
+      }
+    }
+  }
+
+  // Responsive styles for 1600px
+  @media (max-width: $breakpoint-tablet){
+    &__navbar {
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 0;
+      &__items {
+        margin-top: 5px;
+        justify-content: center;
+        margin-left: 22%;
+        
+  
+        a {
+          margin: 10px;
+          font-size: 22px;
+        }
+      }
+        &__logo{
+          margin-top: 6px;
+          &__image{
+            height: 35px;
+            width: 150px;
+          }
+        } 
+    }
+    
+    &__about {
+      &__text {
+        margin-left: 60px;
+
+        h2 {
+          font-size: 28px;
+        }
+
+        h1 {
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 14px;
+          
+        }
+      }
+      &__women {
+        flex: 1;
+        margin-left: 5rem;
+        margin-bottom: 30px;
+  
+        &__img {          
+          height: 400px;
+          width: 300px;
+        }
+      }
+    }
+   
+  }
+  
+
+  // Responsive styles for mobile
+  @media (max-width: $breakpoint-mobile) {
+    &__navbar {
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 0;
+      &__items {
+        margin-top: 5px;
+        justify-content: center;
+        margin-left: 22%;
+        
+  
+        a {
+          margin: 10px;
+          font-size: 15px;
+        }
+      }
+        &__logo{
+          margin-top: 6px;
+          &__image{
+            height: 20px;
+            width: 85px;
+          }
+        } 
+    }
+
+    &__about {
+      flex-direction: column;
+      text-align: center;
+      padding: $content-padding;
+
+      &__text {
+        margin-left: 0;
+
+        h2 {
+          font-size: 20px;
+        }
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 14px;
+          margin-left: 15%;
+        }
+
+        &__buttons {
+          &__first {
+            // ...
+          }
+
+          &__second {
+            display: block;
+            margin: 5px auto;
+          }
+        }
+      }
+
+      &__women {
+        margin-top: 20px;
+        margin-left: 0;
+
+        &__img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

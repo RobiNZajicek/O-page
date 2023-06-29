@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap");
+.header__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 3rem;
+  padding: 1rem 5%;
+  background-color: #F1EFEA;
+}
+.header__navbar__items {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.header__navbar__items a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 3rem;
+}
+.header__navbar__logo {
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  padding: 10px;
+}
+.header__navbar__logo__image {
+  width: 120px;
+  height: 30px;
+}
+.header__about {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: #F1EFEA;
+}
+.header__about__text {
+  flex: 1;
+  margin-left: 195px;
+}
+.header__about__text h2 {
+  font-size: 62px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Kanit", sans-serif; /* Adjust the font weight as needed */
+  font-style: italic;
+}
+.header__about__text h1 {
+  font-size: 82px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: orange;
+  font-family: "Kanit", sans-serif;
+  font-style: italic;
+}
+.header__about__text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.header__about__text__buttons__first, .header__about__text__buttons__second {
+  border-radius: 6px;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.header__about__text__buttons__first {
+  height: 40px;
+  color: #fff;
+  background-color: orange;
+  border: 3px solid #F1EFEA;
+}
+.header__about__text__buttons__first:hover {
+  background-color: #cc8400;
+}
+.header__about__text__buttons__second {
+  background-color: #fff;
+  height: 35px;
+}
+.header__about__text__buttons__second:hover {
+  background-color: rgba(255, 255, 255, 0.342);
+}
+.header__about__text__buttons__second {
+  margin-left: 5px;
+}
+.header__about__women {
+  flex: 1;
+  margin-left: 20rem;
+}
+.header__about__women__img {
+  width: 70%;
+  max-width: 500px;
+  height: auto;
+}
+@media (max-width: 1600px) {
+  .header__navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .header__navbar__items {
+    margin-top: 5px;
+    justify-content: center;
+    margin-left: 22%;
+  }
+  .header__navbar__items a {
+    margin: 10px;
+    font-size: 22px;
+  }
+  .header__navbar__logo {
+    margin-top: 6px;
+  }
+  .header__navbar__logo__image {
+    height: 35px;
+    width: 150px;
+  }
+  .header__about__text {
+    margin-left: 60px;
+  }
+  .header__about__text h2 {
+    font-size: 28px;
+  }
+  .header__about__text h1 {
+    font-size: 60px;
+  }
+  .header__about__text p {
+    font-size: 14px;
+  }
+  .header__about__women {
+    flex: 1;
+    margin-left: 5rem;
+    margin-bottom: 30px;
+  }
+  .header__about__women__img {
+    height: 400px;
+    width: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .header__navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .header__navbar__items {
+    margin-top: 5px;
+    justify-content: center;
+    margin-left: 22%;
+  }
+  .header__navbar__items a {
+    margin: 10px;
+    font-size: 15px;
+  }
+  .header__navbar__logo {
+    margin-top: 6px;
+  }
+  .header__navbar__logo__image {
+    height: 20px;
+    width: 85px;
+  }
+  .header__about {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+  .header__about__text {
+    margin-left: 0;
+  }
+  .header__about__text h2 {
+    font-size: 20px;
+  }
+  .header__about__text h1 {
+    font-size: 36px;
+  }
+  .header__about__text p {
+    font-size: 14px;
+    margin-left: 15%;
+  }
+  .header__about__text__buttons__second {
+    display: block;
+    margin: 5px auto;
+  }
+  .header__about__women {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .header__about__women__img {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=header.css.map */
